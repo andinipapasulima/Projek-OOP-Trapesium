@@ -4,18 +4,27 @@
  */
 package trapesium.logic;
 
+// Pilar 1: Encapsulation & Information Hiding
+// Pilar 4: Abstract method wajib di-override oleh subclass
 public abstract class BangunDatar {
-    private String nama; // Pilar 1: Encapsulation
 
+    private String nama; // private = information hiding
+
+    // Constructor
     public BangunDatar(String nama) {
         this.nama = nama;
     }
 
-    // Getter untuk akses nama (Information Hiding)
+    // Getter (satu-satunya cara akses nama dari luar)
     public String getNama() {
         return nama;
     }
 
-    // Method ini akan di-override oleh class Trapesium
+    // Setter
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    // Pilar 4: Abstract method — wajib diimplementasikan oleh subclass
     public abstract void tampilInfo();
 }

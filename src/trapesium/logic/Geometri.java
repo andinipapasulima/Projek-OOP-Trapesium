@@ -5,7 +5,7 @@
 package trapesium.logic;
 
 public interface Geometri {
-    // Abstract method (otomatis public abstract)
     double hitungLuas();
     double hitungKeliling();
+    double hitungVolume(); // Dibutuhkan untuk Limas & Prisma (Pilar 4 Polymorphism)
 }
